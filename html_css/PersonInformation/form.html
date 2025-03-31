@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Person Information Form</title>
+</head>
+<body>
+    <form id="personForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age: <span id="ageValue">25</span></label>
+            <input type="range" id="age" name="age" min="0" max="100" value="25">
+        </div>
+        
+        <div class="form-group">
+            <label for="gpa">GPA</label>
+            <input type="number" id="gpa" name="gpa" step="0.1" min="0" max="4.0">
+        </div>
+        
+        <div class="form-group">
+            <button type="button" id="resetBtn">Reset</button>
+            <button type="button" id="createBtn">Create</button>
+        </div>
+    </form>
+
+    <div id="personButtons"></div>
+    <div id="personInfo"></div>
+    <script lang="javascript" src="script.js"></script>
+</body>
+</html>
